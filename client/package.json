@@ -4,9 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.@(js|jsx)'",
+     "test:watch": "npm run test -- --watch"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-immutable": "^1.5.3",
+    "jsdom": "^7.2.1",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "immutable": "^3.7.6"
+  }
 }

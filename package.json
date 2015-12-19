@@ -18,12 +18,16 @@
     "babel-preset-react": "^6.3.13",
     "chai": "^3.4.1",
     "chai-immutable": "^1.5.3",
+    "jsdom": "^7.2.1",
     "mocha": "^2.3.4",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
   "babel": {
-    "presets": ["es2015", "react"]
+    "presets": [
+      "es2015",
+      "react"
+    ]
   },
   "dependencies": {
     "immutable": "^3.7.5",
